@@ -12,10 +12,11 @@ func main() {
 
 	// assign the address of b to a
 	a = &b
+	*a = 101
 
 	// print out the value of a which is the address of b
 	fmt.Println(a)
 
 	// print out the value at the address of b
-	fmt.Println(*a)
+	fmt.Println(*a, b)
 }
